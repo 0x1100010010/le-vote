@@ -1,18 +1,18 @@
-var Voting = artifacts.require("./Voting.sol");
+var Election = artifacts.require("./Election.sol");
 
-contract("Voting", function(accounts) {
+contract("Election", function(accounts) {
   var electionInstance;
 
   it("initializes with two candidates", function() {
-    return Voting.deployed().then(function(instance) {
-      return instance.CC();
+    return Election.deployed().then(function(instance) {
+      return instance.candidatesCount();
     }).then(function(count) {
       assert.equal(count, 2);
     });
   });
 
   it("it initializes the candidates with the correct values", function() {
-    return Voting.deployed().then(function(instance) {
+    return Election.deployed().then(function(instance) {
       electionInstance = instance;
       return electionInstance.candidates(1);
     }).then(function(candidate) {

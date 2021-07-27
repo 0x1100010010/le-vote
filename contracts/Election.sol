@@ -1,6 +1,6 @@
 pragma solidity ^0.8.0;
 
-contract Voting {
+contract Election {
 
     constructor () {
         addCandidate("Candidate 1");
@@ -19,11 +19,11 @@ contract Voting {
     }
     
     mapping(uint => Candidate) public candidates;
-    uint public CC;
+    uint public candidatesCount;
     
     function addCandidate (string memory _name) private {
-        CC++;
-        candidates[CC] = Candidate(CC, _name, 0);
+        candidatesCount++;
+        candidates[candidatesCount] = Candidate(candidatesCount, _name, 0);
     }
     
     function setElections ( string memory candidate_1_, string memory candidate_2_ ) public {
