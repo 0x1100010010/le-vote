@@ -6,42 +6,18 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "candidate_1_",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "candidate_2_",
-						"type": "string"
-					}
-				],
+				"inputs": [],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
 			{
 				"inputs": [],
-				"name": "_candidate_1",
+				"name": "CC",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "_candidate_2",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -75,6 +51,24 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "candidate_1_",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "candidate_2_",
+						"type": "string"
+					}
+				],
+				"name": "setElections",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -105,10 +99,10 @@
 	},
 	"sources": {
 		"contracts/Voting.sol": {
-			"keccak256": "0x8eac7456e88fd986239f99651b3722e3a8b3888547b01eae501e85847e5d8382",
+			"keccak256": "0xf57f05c2e5939c496df19cdb7ec5c45a3962f059214a8a21527990286b0d264f",
 			"urls": [
-				"bzz-raw://765471ccea32d4b692a57da789bdce0d6f7e38afdb52dba6a8aa195f0d169685",
-				"dweb:/ipfs/QmRD3a75CY18hQDiBySzGWzwz3FDxij6dkNDoAeRM9F99e"
+				"bzz-raw://3d6582de8b9360629aedc74e933920613748e6c3a657a70f94023b1ad40418cc",
+				"dweb:/ipfs/QmfY8KH5Bjd6b3qgSfmhPSBDWeTQnGsuTfJnkttigaQoXw"
 			]
 		}
 	},
