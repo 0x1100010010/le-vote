@@ -2,6 +2,10 @@ pragma solidity ^0.8.0;
 
 contract Election {
 
+    event votedEvent (
+        uint indexed _candidateId
+    );
+
     constructor () {
         addCandidate("Candidate 1");
         addCandidate("Candidate 2");
@@ -45,6 +49,9 @@ contract Election {
 
         // update candidate vote Count
         candidates[_candidateId].voteCount ++;
+
+        // trigger voted event
+        emit votedEvent(_candidateId);
     }
 }
 
